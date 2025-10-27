@@ -13,7 +13,7 @@
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #17203c 0%, #032c62 100%);
             padding: 20px;
             min-height: 100vh;
         }
@@ -28,7 +28,7 @@
         }
         
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #032c62 0%, #17203c 100%);
             color: white;
             padding: 40px;
             text-align: center;
@@ -59,16 +59,18 @@
             text-align: center;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
+            border-top: 4px solid #032c62;
         }
         
         .stat-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(3,44,98,0.2);
         }
         
         .stat-number {
             font-size: 2.5em;
             font-weight: bold;
-            color: #667eea;
+            color: #032c62;
         }
         
         .stat-label {
@@ -83,7 +85,7 @@
         
         .funnel-stage {
             margin-bottom: 30px;
-            border-left: 4px solid #667eea;
+            border-left: 4px solid #032c62;
             padding-left: 30px;
             position: relative;
         }
@@ -95,10 +97,10 @@
             top: 0;
             width: 16px;
             height: 16px;
-            background: #667eea;
+            background: #032c62;
             border-radius: 50%;
             border: 4px solid white;
-            box-shadow: 0 0 0 2px #667eea;
+            box-shadow: 0 0 0 2px #032c62;
         }
         
         .stage-header {
@@ -118,7 +120,7 @@
         }
         
         .stage-day {
-            background: #667eea;
+            background: #032c62;
             color: white;
             padding: 5px 15px;
             border-radius: 20px;
@@ -129,7 +131,7 @@
         .stage-title {
             font-size: 1.4em;
             font-weight: bold;
-            color: #333;
+            color: #17203c;
         }
         
         .stage-meta {
@@ -161,12 +163,13 @@
             display: flex;
             align-items: center;
             box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border-left: 3px solid #9c897c;
         }
         
         .action-icon {
             width: 40px;
             height: 40px;
-            background: #667eea;
+            background: #032c62;
             color: white;
             border-radius: 50%;
             display: flex;
@@ -182,7 +185,7 @@
         
         .action-title {
             font-weight: bold;
-            color: #333;
+            color: #17203c;
             margin-bottom: 5px;
         }
         
@@ -196,11 +199,12 @@
             padding: 15px;
             border-radius: 8px;
             margin-top: 15px;
+            border-left: 4px solid #032c62;
         }
         
         .metrics-title {
             font-weight: bold;
-            color: #1976d2;
+            color: #032c62;
             margin-bottom: 10px;
         }
         
@@ -220,7 +224,7 @@
         .metric-value {
             font-size: 1.5em;
             font-weight: bold;
-            color: #1976d2;
+            color: #032c62;
         }
         
         .metric-label {
@@ -230,15 +234,16 @@
         }
         
         .tips {
-            background: #fff3e0;
+            background: #fff9f0;
             padding: 20px;
             border-radius: 10px;
             margin-top: 20px;
+            border-left: 4px solid #9c897c;
         }
         
         .tips-title {
             font-weight: bold;
-            color: #f57c00;
+            color: #9c897c;
             margin-bottom: 10px;
             font-size: 1.1em;
         }
@@ -250,7 +255,7 @@
         .tips-list li {
             padding: 8px 0;
             color: #666;
-            border-bottom: 1px solid #ffe0b2;
+            border-bottom: 1px solid #f5e6d3;
         }
         
         .tips-list li:last-child {
@@ -263,14 +268,14 @@
         }
         
         .footer {
-            background: #333;
+            background: #17203c;
             color: white;
             padding: 30px;
             text-align: center;
         }
         
         .cta-button {
-            background: #667eea;
+            background: #9c897c;
             color: white;
             padding: 15px 30px;
             border-radius: 25px;
@@ -282,7 +287,7 @@
         }
         
         .cta-button:hover {
-            background: #764ba2;
+            background: #032c62;
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         }
@@ -572,7 +577,7 @@
             <div class="funnel-stage">
                 <div class="stage-header" onclick="toggleStage(this)">
                     <div>
-                        <span class="stage-day" style="background: #4caf50;">RESULTADO</span>
+                        <span class="stage-day" style="background: #8c95ae;">RESULTADO</span>
                     </div>
                     <div class="stage-title">Conversão Final Esperada</div>
                     <div class="stage-meta">15 Diagnósticos → 10 Agendamentos → 8 Propostas → 3-5 Fechamentos</div>
@@ -637,7 +642,7 @@
             <div class="funnel-stage">
                 <div class="stage-header" onclick="toggleStage(this)">
                     <div>
-                        <span class="stage-day" style="background: #ff9800;">ANEXO</span>
+                        <span class="stage-day" style="background: #9c897c;">ANEXO</span>
                     </div>
                     <div class="stage-title">Conteúdo dos Contatos</div>
                     <div class="stage-meta">Resumo dos 4 pontos de contato da campanha</div>
